@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Icon from 'react-native-vector-icons/Ionicons';
+import { AppRegistry } from 'react-native';
 
 // Import screens
 import HomeScreen from './src/screens/HomeScreen';
@@ -81,5 +82,8 @@ const App = () => {
     </NavigationContainer>
   );
 };
+
+// Register the app
+AppRegistry.registerComponent('mirvaa', () => App);
 
 export default App; 
